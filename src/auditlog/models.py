@@ -10,6 +10,7 @@ from django.db.models import QuerySet, Q
 from django.utils.encoding import smart_text
 # from django.utils.six import iteritems, integer_types
 from django.utils.translation import ugettext_lazy as _
+from django.contrib.postgres.fields import JSONField
 
 try:
     from django.utils.encoding import python_2_unicode_compatible
@@ -20,8 +21,6 @@ try:
     from django.utils.six import iteritems, integer_types
 except ImportError:
     from six import iteritems, integer_types
-
-from jsonfield_compat import JSONField
 
 
 class LogEntryManager(models.Manager):
