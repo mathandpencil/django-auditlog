@@ -1,1 +1,2 @@
 django
+git+https://github.com/nickmccullum/django-jsonfield-compat.git@da1b1a4a007d5af58c539aaefa4dc1b6093b4dfb#egg=django-jsonfield-compat==0.4.5
